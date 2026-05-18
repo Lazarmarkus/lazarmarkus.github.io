@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LaserCode Solutions – App Development</title>
+<style>
+  :root {
+    --gold: #b5893a;
+    --dark: #1a1612;
+    --gray: #4a443c;
+    --bg: #f5f0e8;
+    --card: #faf7f2;
+    --border: rgba(26,22,18,.12);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Georgia', serif;
+    background: var(--bg);
+    color: var(--dark);
+    line-height: 1.75;
+  }
+  header {
+    background: var(--dark);
+    color: #f5f0e8;
+    padding: 60px 24px 50px;
+    text-align: center;
+  }
+  header .logo {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+  }
+  header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
+  header h1 em { color: var(--gold); font-style: normal; }
+  header p {
+    font-size: 17px;
+    color: rgba(245,240,232,.65);
+    max-width: 520px;
+    margin: 0 auto 32px;
+    font-family: 'Arial', sans-serif;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--gold);
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .btn:hover { opacity: .88; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  section { padding: 64px 0; }
+  section + section { border-top: 1px solid var(--border); }
+  h2 {
+    font-size: 28px;
+    color: var(--dark);
+    margin-bottom: 16px;
+    font-family: 'Arial', sans-serif;
+  }
+  h2 em { color: var(--gold); font-style: normal; }
+  .lead {
+    font-size: 17px;
+    color: var(--gray);
+    max-width: 600px;
+    margin-bottom: 32px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.7;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 32px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--gold);
+    border-radius: 8px;
+    padding: 24px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  .card .icon { font-size: 28px; margin-bottom: 10px; }
+  .card h3 { font-size: 15px; font-weight: bold; color: var(--dark); margin-bottom: 6px; }
+  .card p { font-size: 13px; color: var(--gray); line-height: 1.5; }
+  .contact-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--gold);
+    border-radius: 8px;
+    padding: 28px 24px;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 2;
+  }
+  .contact-box strong { color: var(--dark); }
+  .contact-box a { color: var(--gold); text-decoration: none; }
+  .contact-box a:hover { text-decoration: underline; }
+  footer {
+    background: var(--dark);
+    color: rgba(245,240,232,.45);
+    text-align: center;
+    padding: 28px 24px;
+    font-size: 12px;
+    font-family: 'Arial', sans-serif;
+  }
+  footer a { color: var(--gold); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">LaserCode Solutions</div>
+  <h1>Apps, die<br><em>begeistern.</em></h1>
+  <p>Ich entwickle Mobile Apps für Android – von der Idee bis zur Veröffentlichung im Store.</p>
+  <a href="mailto:laser-bot2026@gmx.de" class="btn">Kontakt aufnehmen</a>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <h2>Was ich <em>mache</em></h2>
+    <p class="lead">
+      Als Einzelunternehmer aus Ettenheim entwickle ich native Android-Apps –
+      mit Fokus auf sauberes Design, einfache Bedienung und nachhaltigen Mehrwert für die Nutzer.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>Android-Entwicklung</h3>
+        <p>Native Apps mit Kotlin & Java, optimiert für alle Gerätegrößen.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h3>UI/UX Design</h3>
+        <p>Klares, intuitives Design das Nutzer begeistert und hält.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🚀</div>
+        <h3>Play Store Publishing</h3>
+        <p>Von der Entwicklung bis zur Veröffentlichung – alles aus einer Hand.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔒</div>
+        <h3>Datenschutz-First</h3>
+        <p>DSGVO-konform by Design. Keine unnötige Datenerhebung.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><em>Kontakt</em></h2>
+    <p class="lead">Fragen, Anfragen oder Feedback – ich freue mich von dir zu hören.</p>
+    <div class="contact-box">
+      <strong>LaserCode Solutions</strong><br>
+      Inhaber: Markus Lazar<br>
+      Carl-Hermann-Jäger-Str. 5 · 77955 Ettenheim · Deutschland<br>
+      E-Mail: <a href="mailto:laser-bot2026@gmx.de">laser-bot2026@gmx.de</a><br>
+      Telefon: <a href="tel:+4917632086967">+49 176 32086967</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 LaserCode Solutions &nbsp;·&nbsp;
+  <a href="/datenschutz.html">Datenschutz</a> &nbsp;·&nbsp;
+  Ettenheim, Deutschland
+</footer>
+
+</body>
+</html>
